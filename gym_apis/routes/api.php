@@ -7,4 +7,4 @@ use App\Http\Controllers\API\AuthController;
 
 Route::post('signup',[AuthController::class,'signup']);
 Route::post('login',[AuthController::class,'login']);
-Route::post('logout',[AuthController::class,'logout'])->middleware('auth:santum');
+Route::post('logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
